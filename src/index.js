@@ -6,7 +6,7 @@ import './index.css';
 
 ReactDOM.render(
 //lecture 1 ~ create element
-React.createElement("h1", null, "Good Coding"),
+React.createElement("h1", {style: {color: "blue"}}, "Good Coding"),
 document.getElementById('root')
 
   // replace react startup code for learn react 
