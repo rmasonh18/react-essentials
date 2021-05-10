@@ -10,25 +10,14 @@ function RegularComponent() {
   return <h1>Every user has access</h1>
 }
 
-//array destructuring 
-const checklist = ["boots", "tent", "headlamp"];
-//empty array 
-const[mostImportantItem] = ["boots", "tent", "headlamp"];
-const[Item, second] = ["boots", "tent", "headlamp"];
-const[,,light] = ["boots", "tent", "headlamp"];
 
 
-console.log(checklist[1]);
-console.log(mostImportantItem);
-console.log(Item, second);
-console.log(light);
-
-
-function App(props) {
+// object destructuring
+function App( { authorized }) {
  // use shorthand react.fragment for conditional rendering terinary statement
  return (
   <>
-    {props.authorized ? <SecretComponent /> : <RegularComponent />}
+    {authorized ? <SecretComponent /> : <RegularComponent />}
   </>
  );
 }
