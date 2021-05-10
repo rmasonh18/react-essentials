@@ -10,11 +10,14 @@ function RegularComponent() {
   return <h1>Every user has access</h1>
 }
 
+//array destructuring 
+const checklist = ["boots", "tent", "headlamp"];
 
+console.log(checklist[1]);
 
 
 function App(props) {
- // use shorthand react.fragment for conditional rendering
+ // use shorthand react.fragment for conditional rendering terinary statement
  return (
   <>
     {props.authorized ? <SecretComponent /> : <RegularComponent />}
