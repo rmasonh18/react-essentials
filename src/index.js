@@ -5,15 +5,25 @@ import './index.css';
 //import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  //Lecture jsx 
+  <ul>
+    <li>Sunday</li>
+    <li>Monday</li>
+    <li>Tuesday</li>
+    <li>Wednesday</li>
+    <li>Thursday</li>
+    <li>Friday</li>
+    <li>Shabbat</li>
+  </ul>,
 //lecture 1 ~ create element
-React.createElement("ul", null,
+/* React.createElement("ul", null,
  React.createElement("li", null, "Sunday"),
  React.createElement("li", null, "Monday"),
  React.createElement("li", null, "Tuesday"),
  React.createElement("li", null, "Wednesday"),
  React.createElement("li", null, "Thursday"),
  React.createElement("li", null, "Friday"),
- React.createElement("li", null, "Shabbat")),
+ React.createElement("li", null, "Shabbat")), */
 document.getElementById('root')
 
   // replace react startup code for learn react 
