@@ -1,16 +1,16 @@
 //.import logo from './logo.svg';
-import React, { useState, useEffect } from 'react';
+import React, { useReducer } from 'react';
 import './App.css';
 //import jackie from "./profile.png";
 
 
 
 function App() {
-  const [checked, setChecked] = useState(false);
+  const [checked, toggle] = useReducer(
+    (checked) => !checked,
+    false);
   
-  function toggle() {
-    setChecked((checked) => !checked)
-  }
+ 
   return(
     <>
       <input 
