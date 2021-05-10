@@ -6,7 +6,14 @@ import './index.css';
 
 ReactDOM.render(
 //lecture 1 ~ create element
-React.createElement("h1", {style: {color: "blue"}}, "Good Coding"),
+React.createElement("ul", null,
+ React.createElement("li", null, "Sunday"),
+ React.createElement("li", null, "Monday"),
+ React.createElement("li", null, "Tuesday"),
+ React.createElement("li", null, "Wednesday"),
+ React.createElement("li", null, "Thursday"),
+ React.createElement("li", null, "Friday"),
+ React.createElement("li", null, "Shabbat")),
 document.getElementById('root')
 
   // replace react startup code for learn react 
