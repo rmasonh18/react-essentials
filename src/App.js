@@ -24,6 +24,7 @@ function Main(props) {
   );
 }
 
+//footer componet
 function Footer(props) {
   return (
     <p> Copyright &copy; {props.year}</p>
@@ -31,10 +32,21 @@ function Footer(props) {
   
 }
 
+//dishes array
+const dishes = [
+  "macaroni and cheese",
+  "Salmon",
+  "Tofu and vegetables"
+];
+
+//map dishes
+dishes.map((dish) => console.log(dish));
+
+
 function App() {
   return (
     <div className="App">
-    <Header name="Robert" />
+    <Header name="Jackie" />
     <Main adjective="amazing"/>
     <Footer year={new Date().getFullYear()}/>
     </div>
