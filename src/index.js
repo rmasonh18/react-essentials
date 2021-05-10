@@ -4,34 +4,24 @@ import './index.css';
 import App from './App';
 //import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+//use reactfragment 
 
-  <App/>,
-  //Lecture jsx 
-  /* <ul>
-    <li>Sunday</li>
-    <li>Monday</li>
-    <li>Tuesday</li>
-    <li>Wednesday</li>
-    <li>Thursday</li>
-    <li>Friday</li>
-    <li>Shabbat</li>
-  </ul>, */
-//lecture 1 ~ create element
-/* React.createElement("ul", null,
- React.createElement("li", null, "Sunday"),
- React.createElement("li", null, "Monday"),
- React.createElement("li", null, "Tuesday"),
- React.createElement("li", null, "Wednesday"),
- React.createElement("li", null, "Thursday"),
- React.createElement("li", null, "Friday"),
- React.createElement("li", null, "Shabbat")), */
+function AppTwo() {
+  return <h1>This the idea of additional App using React fragement over wrap in div</h1>;
+}
+
+ReactDOM.render(
+<React.Fragment>
+  <App/>
+  <AppTwo />
+
+
+</React.Fragment>,
+ 
+  
 document.getElementById('root')
 
-  // replace react startup code for learn react 
-  /* <React.StrictMode>
-    <App />
-  </React.StrictMode>, */
+  
   
 );
 
