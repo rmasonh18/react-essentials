@@ -14,7 +14,13 @@ import './App.css';
       .then(setData);
   }, []);
   if (data) {
-    return <div>{JSON.stringify(data)}</div>;
+    return (
+      <div>
+        <h1>NAME: <strong></strong>{data.login}</h1>
+        <p>PUBLIC REPOS: {data.public_repos}</p>
+        <img alt ={data.login} src={data.avatar_url} />
+      </div>
+    );
   }
 
 
