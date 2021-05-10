@@ -15,18 +15,18 @@ function Header(props) {
 }
 
 //creat main component
-function Main() {
+function Main(props) {
   return (
     <section>
-      <p>We serve the most delicious food around.</p>
+      <p>We serve the most {props.adjective} food around.</p>
     </section>
 
   );
 }
 
-function Footer() {
+function Footer(props) {
   return (
-    <p>It is true!</p>
+    <p> Copyright &copy; {props.year}</p>
   );
   
 }
@@ -34,9 +34,9 @@ function Footer() {
 function App() {
   return (
     <div className="App">
-    <Header name="Jackie" />
-    <Main />
-    <Footer />
+    <Header name="Robert" />
+    <Main adjective="amazing"/>
+    <Footer year={new Date().getFullYear()}/>
     </div>
   );
 }
