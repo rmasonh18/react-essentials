@@ -10,7 +10,7 @@ import App from './App';
 
 ReactDOM.render(
 
-  <App />,
+  <App login ="rmasonh18"/>,
 
   
 document.getElementById('root')
