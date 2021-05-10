@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import App from './App';
 //import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+
+  <App/>,
   //Lecture jsx 
-  <ul>
+  /* <ul>
     <li>Sunday</li>
     <li>Monday</li>
     <li>Tuesday</li>
@@ -14,7 +16,7 @@ ReactDOM.render(
     <li>Thursday</li>
     <li>Friday</li>
     <li>Shabbat</li>
-  </ul>,
+  </ul>, */
 //lecture 1 ~ create element
 /* React.createElement("ul", null,
  React.createElement("li", null, "Sunday"),
