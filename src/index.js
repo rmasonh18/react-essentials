@@ -6,18 +6,12 @@ import App from './App';
 
 //use reactfragment 
 
-function AppTwo() {
-  return <h1>This the idea of additional App using React fragement over wrap in div</h1>;
-}
+
 
 ReactDOM.render(
-<React.Fragment>
-  <App/>
-  <AppTwo />
 
+  <App/>,
 
-</React.Fragment>,
- 
   
 document.getElementById('root')
 
