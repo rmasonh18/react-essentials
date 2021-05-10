@@ -22,12 +22,19 @@ function Main() {
   );
 }
 
+function Footer() {
+  return (
+    <p>It is true!</p>
+  );
+  
+}
+
 function App() {
   return (
     <div className="App">
     <Header />
     <Main />
-    <h3>Footer</h3>
+    <Footer />
     </div>
   );
 }
