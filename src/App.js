@@ -14,12 +14,12 @@ function RegularComponent() {
 
 
 function App(props) {
-  if(props.authorized) {
-    return <SecretComponent/>
-  } else  {
-    return <RegularComponent />
-  }
-  
+ // use shorthand react.fragment for conditional rendering
+ return (
+  <>
+    {props.authorized ? <SecretComponent /> : <RegularComponent />}
+  </>
+ );
 }
 
 export default App;
