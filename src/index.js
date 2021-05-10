@@ -10,7 +10,7 @@ import App from './App';
 
 ReactDOM.render(
 
-  <App authorized = { false }/>,
+  <App />,
 
   
 document.getElementById('root')

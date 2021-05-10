@@ -1,23 +1,20 @@
 //.import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 //import jackie from "./profile.png";
 
-function SecretComponent() {
-  return <h1>Secret for only authorized users</h1>
-}
-
-function RegularComponent() {
-  return <h1>Every user has access</h1>
-}
 
 
-
-// object destructuring
-function App( { authorized }) {
+function App() {
  // use shorthand react.fragment for conditional rendering terinary statement
+ const [emotion, setEmotion] = useState("happy");
+ console.log(emotion);
  return (
   <>
-    {authorized ? <SecretComponent /> : <RegularComponent />}
+    <h1>Current emotion is { emotion } </h1>
+    <button onClick={() => setEmotion("HAPPY")}>Be Happy</button>
+    <button onClick = {() => setEmotion("Frustrated")}>Change Emotion</button>
+    <button onClick = {() => setEmotion("Enthusatic")}>Enthuse</button>
   </>
  );
 }
