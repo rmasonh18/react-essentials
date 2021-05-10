@@ -12,8 +12,16 @@ function RegularComponent() {
 
 //array destructuring 
 const checklist = ["boots", "tent", "headlamp"];
+//empty array 
+const[mostImportantItem] = ["boots", "tent", "headlamp"];
+const[Item, second] = ["boots", "tent", "headlamp"];
+const[,,light] = ["boots", "tent", "headlamp"];
+
 
 console.log(checklist[1]);
+console.log(mostImportantItem);
+console.log(Item, second);
+console.log(light);
 
 
 function App(props) {
